@@ -12,5 +12,5 @@ SELECT Nome_Membro FROM instituicao
 WHERE Funcao_Institucional = 'professor';
 
 -- ver todos os estudantes
-SELECT Nome_Membro FROM Instituicao
+SELECT Nome_Membro FROM instituicao
 WHERE Funcao_Institucional = 'estudante';
