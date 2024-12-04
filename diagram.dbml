@@ -1,0 +1,44 @@
+// diagrama versao dmbl
+// os docs aqui https://dbml.dbdiagram.io/docs/
+// https://dbdiagram.io/d/Diagrama-Escola-BANCO-DE-DADOS-Triziziz-6750d7b0e9daa85acab2e424
+
+Table instituicao {
+    ID_Membro int [primary key]
+    Telefone varchar
+    Email varchar
+    Data_Nascimento date
+    Funcao_Institucional varchar
+    Nome_Membro varchar
+    Endereco varchar
+}
+
+Table professor {
+    ID_Professor int [primary key]
+    ID_Membro int [ref: > instituicao.ID_Membro]
+    Especialidade varchar
+}
+
+Table estudante {
+    ID_Estudante int [primary key]
+    ID_Membro int [ref: > instituicao.ID_Membro]
+}
+
+Table disciplina {
+    ID_Disciplina int [primary key]
+    Nome varchar
+    Carga_Horaria int
+    ID_Professor int [ref: > professor.ID_Professor]
+}
+
+Table turma {
+    ID_Turma int [primary key]
+    Ano_Escolar int
+    Semestres int
+    ID_Disciplina int [ref: > disciplina.ID_Disciplina] 
+}
+
+Table matricula {
+    ID_Matricula int [primary key]
+    ID_Estudante int [ref: > estudante.ID_Estudante] 
+    ID_Turma int [ref: > turma.ID_Turma]
+}
