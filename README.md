@@ -14,3 +14,7 @@ Este repositório contém a implementação de um sistema de banco de dados para
 
 ## 🎯 Objetivo 
 Desenvolver e implementar um sistema de banco de dados para uma escola, abordando as entidades Estudante, Professor e Disciplina, com o sistema estruturado na 1FN (Primeira Forma Normal). O objetivo é praticar a modelagem e manipulação de dados em um banco de dados relacional.
+
+## Preview
+![image](https://github.com/user-attachments/assets/88dff097-d509-42a5-b931-620432386dad)
+
